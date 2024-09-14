@@ -1,0 +1,27 @@
+/* You can add this to a separate style.css file if you prefer */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#confidenceChart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.bar {
+    width: 40px;
+    background-color: #3b82f6;
+    margin: 0 5px;
+    position: relative;
+}
+
+.bar-label {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 12px;
+}

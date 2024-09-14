@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Countdown Timer</title>
+  <link rel="stylesheet" href="count.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Countdown to New Year!</h1>
+    <div class="countdown">
+      <div class="countdown-item">
+        <span class="value" id="days">00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="countdown-item">
+        <span class="value" id="hours">00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="countdown-item">
+        <span class="value" id="minutes">00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="countdown-item">
+        <span class="value" id="seconds">00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <p class="made-by">Made by Atharva</p>
+    <div class="stopwatch">
+      <div class="stopwatch-display">
+        <span id="stopwatch-minutes">00</span>:<span id="stopwatch-seconds">00</span>:<span id="stopwatch-milliseconds">00</span>
+      </div>
+      <div class="stopwatch-controls">
+        <button id="start-stopwatch">Start</button>
+        <button id="stop-stopwatch">Stop</button>
+        <button id="reset-stopwatch">Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #colorPicker {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 25%;
+    cursor: pointer;
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 72px;
+    font-weight: bold;
+  }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interactive Image Gallery</title>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="https://images.freeimages.com/images/large-previews/daa/flowers-of-almond-tree-1378098.jpg?fmt=webp&w=500" alt="Image 1" class="gallery-item">
+            <img src="https://media.istockphoto.com/id/1345517821/photo/night-flowering-jasmine-parijat-hengra-bubar-shiuli-flowers-on-the-ground-with-blur-background.webp?b=1&s=612x612&w=0&k=20&c=CA80YQGTgRBl1tomDS3OlR2Vla98atdZEbNkHuj5HWA=" alt="Image 2" class="gallery-item">
+            <img src="https://images.freeimages.com/images/large-previews/a7d/water-lilly-1359118.jpg?fmt=webp&w=500" alt="Image 3" class="gallery-item">
+            <img src="https://images.freeimages.com/images/large-previews/d0e/white-and-pink-lily-1338571.jpg?fmt=webp&w=500" alt="Image 4" class="gallery-item">
+            <img src="https://images.freeimages.com/images/large-previews/927/orchid-sextuplet-1347774.jpg?fmt=webp&w=500" alt="Image 5" class="gallery-item">
+            <img src="https://images.freeimages.com/images/large-previews/caa/flower-1371413.jpg?fmt=webp&w=500" alt="Image 6" class="gallery-item">
+            <img src="https://images.freeimages.com/images/large-previews/d60/lotus-1379510.jpg?fmt=webp&w=500" alt="Image 6" class="gallery-item">
+            <img src="https://images.freeimages.com/images/large-previews/2bb/lotus-flower-1382267.jpg?fmt=webp&w=500" alt="Image 6" class="gallery-item">
+            <img src="https://images.freeimages.com/images/large-previews/e05/flower-with-raindrops-1455418.jpg?fmt=webp&w=500" alt="Image 6" class="gallery-item">
+            <img src="https://images.freeimages.com/images/large-previews/0d6/blue-flowers-with-macro-4-1400913.jpg?fmt=webp&w=500" alt="Image 6" class="gallery-item">
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <div class="footer">
+        <p>Made by Atharva</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

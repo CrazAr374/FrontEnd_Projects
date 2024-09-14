@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #3a1c71, #d76d77, #ffaf7b);
+    font-family: 'Roboto', sans-serif;
+    animation: gradientBG 15s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 320px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.calculator:hover {
+    transform: scale(1.02);
+}
+
+.display {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+}
+
+#history {
+    font-size: 16px;
+    min-height: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#result {
+    font-size: 40px;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 24px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 300;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.operator {
+    background-color: rgba(241, 163, 60, 0.6);
+    font-weight: 400;
+}
+
+.operator:hover {
+    background-color: rgba(251, 177, 60, 0.8);
+}
+
+.clear {
+    background-color: rgba(217, 83, 79, 0.6);
+}
+
+.clear:hover {
+    background-color: rgba(239, 83, 80, 0.8);
+}
+
+.equals {
+    background-color: rgba(91, 192, 222, 0.6);
+    font-weight: 700;
+}
+
+.equals:hover {
+    background-color: rgba(70, 184, 218, 0.8);
+}
+
+@keyframes buttonPress {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+.button-press {
+    animation: buttonPress 0.15s ease;
+}
